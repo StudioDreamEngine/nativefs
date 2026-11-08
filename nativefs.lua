@@ -219,7 +219,7 @@ File.__index = File
 -----------------------------------------------------------------------------
 
 local nativefs = {}
-loveC = ffi.os == 'Windows' and ffi.load('love') or C
+local loveC = ffi.os == 'Windows' and ffi.load('love') or C
 
 function nativefs.newFile(name)
 	if type(name) ~= 'string' then
